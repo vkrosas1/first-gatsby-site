@@ -1,18 +1,23 @@
-import * as React from "react"
-import CustomLayout from "../components/layout"
+import * as React from "react";
+import CustomLayout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
     <CustomLayout pageTitle="Home Page">
       <h1> Welcome to my Gatsby site! </h1>
       <p>I'm just following the tutorial</p>
+      <StaticImage
+        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+        src="../images/mountain.png"
+      />{" "}
     </CustomLayout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;
 
 /*
 const pageStyles = {
