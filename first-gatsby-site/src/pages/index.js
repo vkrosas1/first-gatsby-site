@@ -1,5 +1,20 @@
 import * as React from "react"
+import CustomLayout from "../components/layout"
 
+const IndexPage = () => {
+  return (
+    <CustomLayout pageTitle="Home Page">
+      <h1> Welcome to my Gatsby site! </h1>
+      <p>I'm just following the tutorial</p>
+    </CustomLayout>
+  )
+}
+
+export default IndexPage
+
+export const Head = () => <title>Home Page</title>
+
+/*
 const pageStyles = {
   color: "#232129",
   padding: 96,
@@ -123,8 +138,7 @@ const links = [
   },
 ]
 
-const IndexPage = () => {
-  return (
+return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
         Congratulations
@@ -169,8 +183,4 @@ const IndexPage = () => {
       />
     </main>
   )
-}
-
-export default IndexPage
-
-export const Head = () => <title>Home Page</title>
+*/
